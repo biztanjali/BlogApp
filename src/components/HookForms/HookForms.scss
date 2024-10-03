@@ -1,0 +1,29 @@
+@import "../../styles/core/core-variables";
+
+.custom-input {
+
+  input,
+  textarea,
+  select {
+    border: 1px solid $green-1-color;
+    border-radius: 8px;
+    margin: 4px 0 20px;
+    font-family: $primary-font;
+  }
+
+  input {
+    height: 38px;
+  }
+
+  input[type='checkbox'] {
+    margin: 0;
+  }
+
+  textarea {
+    height: 70px;
+  }
+
+  select {
+    height: 42px;
+  }
+}
