@@ -1,0 +1,21 @@
+.background {
+  &-primary-color {
+    background-color: $primary-color;
+  }
+
+  &-transparent {
+    background-color: transparent;
+  }
+
+  &-secondary-color {
+    background-color: $secondary-color;
+  }
+
+  &-default-color {
+    background-color: $default-color;
+  }
+
+  &-danger-color {
+    background-color: $danger-color;
+  }
+}

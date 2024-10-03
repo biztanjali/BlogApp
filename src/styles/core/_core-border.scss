@@ -1,0 +1,58 @@
+.border {
+  &-none {
+    border: none;
+  }
+
+  &-1 {
+    border: 1px solid;
+  }
+
+  &-top {
+    border-top: 1px solid;
+  }
+
+  &-bottom {
+    border-bottom: 1px solid;
+  }
+
+  &-bottom-2 {
+    border-bottom: 1px solid;
+  }
+
+  &-bottom-3 {
+    border-bottom: 3px solid;
+  }
+
+  &-left {
+    border-left: 1px solid;
+    // border-color: $secondary-color;
+  }
+
+  &-left2 {
+    border-left: 2px solid;
+    border-color: $secondary-color;
+  }
+
+  &-right {
+    border-right: 1px solid;
+  }
+
+
+  //Color
+  &-primary-color {
+    border-color: $primary-color;
+  }
+
+  &-secondary-color {
+    border-color: $secondary-color;
+  }
+
+  &-default-color {
+    border-color: $default-color;
+  }
+
+  &-danger-color {
+    border-color: $danger-color;
+  }
+
+}
