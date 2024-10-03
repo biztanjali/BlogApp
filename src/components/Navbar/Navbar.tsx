@@ -1,8 +1,12 @@
+import Links from "./links/links";
 
 export default function Navbar() {
   return (
     <div>
-      Navbar
+      <div>Logo</div>
+      <div>
+      <Links/>
+      </div>
     </div>
   )
 }
