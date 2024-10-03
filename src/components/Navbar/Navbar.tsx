@@ -1,4 +1,5 @@
-import Links from "./links/links";
+import Links from "./links/Links";
+
 
 export default function Navbar() {
   return (

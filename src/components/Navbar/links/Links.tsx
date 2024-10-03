@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function links() {
+export default function Links() {
   const links = [
     {
       title: "Homepage",
