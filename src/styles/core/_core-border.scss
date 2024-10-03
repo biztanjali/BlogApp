@@ -17,12 +17,10 @@
 
   &-bottom-2 {
     border-bottom: 1px solid;
-    border-color: $grey-shade-6 ;
   }
 
   &-bottom-3 {
     border-bottom: 3px solid;
-    border-color: $orange-shade-1 ;
   }
 
   &-left {
@@ -55,26 +53,6 @@
 
   &-danger-color {
     border-color: $danger-color;
-  }
-
-  &-grey-shade-1 {
-    border-color: $grey-shade-1;
-  }
-
-  &-green-shade-3 {
-    border-color: $green-shade-3;
-  }
-
-  &-orange-shade-1 {
-    border-color: $orange-shade-1;
-  }
-
-  &-grey-shade-2 {
-    border-color: $grey-shade-2;
-  }
-
-  &-grey-shade-4 {
-    border-color: $grey-shade-4;
   }
 
 }

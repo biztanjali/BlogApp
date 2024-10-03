@@ -31,59 +31,7 @@
   &-secondary-color {
     color: $secondary-color;
   }
-
-  &-black-shade1 {
-    color: $black-shade-1;
-  }
-
-  &-blue-shade1 {
-    color: $blue-shade-1;
-  }
-
-  &-blue-shade3 {
-    color: $blue-shade-3;
-  }
-
-  &-grey-shade2 {
-    color: $grey-shade-2;
-  }
-
-  &-grey-shade-1 {
-    color: $grey-shade-1;
-  }
-
-  &-grey-shade-2 {
-    color: $grey-shade-2;
-  }
-
-  &-grey-shade-4 {
-    color: $grey-shade-4;
-  }
-
-  &-green-shade2 {
-    color: $green-shade-2;
-  }
-
-  &-orange-shade1 {
-    color: $orange-shade-1;
-  }
-
-  &-orange-shade3 {
-    color: $orange-shade-3;
-  }
-
-  &-blue-shade-2 {
-    color: $blue-shade-2;
-  }
-
-  &-blue-shade-6 {
-    color: $blue-shade-6;
-  }
-
-  &-green-shade-2 {
-    color: $green-shade-2;
-  }
-
+  
   &-default-color {
     color: $default-color;
   }
@@ -92,9 +40,6 @@
     color: $danger-color;
   }
 
-  &-blue-color {
-    color: $blue-color;
-  }
 
   // misc
   &-underline {
