@@ -1,0 +1,253 @@
+@import "../../styles/core/core-variables";
+
+.customButton {
+  &.ui.button {
+    border-radius: 0;
+    min-width: 6rem;
+    // min-height: 2.5rem;
+    font-family: $primary-font;
+    padding: 0.75rem 1.875rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+
+
+    &.round {
+      border-radius: 20px;
+    }
+
+    &.icon-only {
+      min-width: 0px;
+      padding: 0.25rem;
+    }
+
+    &.no-padding {
+      padding: 0;
+      min-width: 0;
+    }
+
+    &.no-margin {
+      margin: 0;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+
+    &.circular {
+      border-radius: 4px;
+    }
+
+    &.text-small {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      padding: 8px 18px;
+    }
+
+    &.text-big {
+      font-size: 1.375rem;
+      line-height: 1.42rem;
+      padding: 22px 40px;
+    }
+
+    &.primary-button {
+      background-color: $primary-color;
+      color: $secondary-color;
+      border: 1.5px solid $primary-color;
+      font-weight: 600;
+     
+
+      &.outline {
+        background-color: transparent;
+        color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    &.secondary-button {
+      background-color: $default-color;
+      color: $secondary-color;  
+      font-weight: 600;   
+      border: 1.5px solid $default-color;
+
+      &.outline {
+        background-color: transparent;
+        color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+      &.no-button-background {
+        background-color: transparent;
+
+        &:hover {
+          color: $default-color;
+          text-decoration:underline;
+        }
+      }
+    }
+
+    &.grey-button {
+      background-color: rgb(170, 166, 166);
+      color: $default-color;
+      font-weight: 600;
+
+      &.outline {
+        background-color: transparent;
+        border: 1px solid rgb(170, 166, 166);
+        box-shadow: none;
+        border-radius: 10px;
+        // padding: 0.5rem;
+        margin-bottom: 0.25rem; 
+        margin-left: 0.5rem;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+      &.notBold {
+        font-weight: 400;
+      }
+
+      &.no-button-background {
+        background-color: transparent;
+
+        // &:hover {
+        //   color: $blue-shade-2;
+        //   text-decoration:underline;
+        // }
+      }
+    }
+  }
+}
+
+.ui.popup.button-popover {
+  padding: $padding-1;
+  // background: $black-shade-4;
+  border: none;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  .customButton {
+    &.ui.button {
+      padding: 7px 12px;
+      font-size: 0.75rem;
+      line-height: 0.92rem;
+
+      &.text-big {
+        line-height: 1.35rem;
+        font-size: 1rem;
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+
+.ui.button {
+  &.width-20p {
+    min-width: 20px !important;
+  }
+
+  &.padding {
+    &-1 {
+      padding: $padding-1;
+    }
+
+    &-2 {
+      padding: $padding-2;
+    }
+
+    &-3 {
+      padding: $padding-3;
+    }
+
+    &-4 {
+      padding: $padding-4;
+    }
+
+    &-l-1 {
+      padding-left: $padding-1;
+    }
+
+    &-l-2 {
+      padding-left: $padding-2;
+    }
+
+    &-l-3 {
+      padding-left: $padding-3;
+    }
+
+    &-l-4 {
+      padding-left: $padding-4;
+    }
+
+    &-r-1 {
+      padding-right: $padding-1;
+    }
+
+    &-r-2 {
+      padding-right: $padding-2;
+    }
+
+    &-r-3 {
+      padding-right: $padding-3;
+    }
+
+    &-r-4 {
+      padding-right: $padding-4;
+    }
+
+  }
+
+  &.margin {
+    &-l-1 {
+      margin-left: $margin-1;
+    }
+
+    &-l-2 {
+      margin-left: $margin-2;
+    }
+
+    &-l-3 {
+      margin-left: $margin-3;
+    }
+
+    &-l-4 {
+      margin-left: $margin-4;
+    }
+
+    &-r-1 {
+      margin-right: $margin-1;
+    }
+
+    &-r-2 {
+      margin-right: $margin-2;
+    }
+
+    &-r-3 {
+      margin-right: $margin-3;
+    }
+
+    &-r-4 {
+      margin-right: $margin-4;
+    }
+
+    &-r-5 {
+      margin-right: $margin-5;
+    }
+  }
+}

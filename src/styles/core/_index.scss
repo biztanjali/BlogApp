@@ -11,7 +11,7 @@
 
 @include dynamic-space-property("width", "", "%", 1, 101);
 @include dynamic-space-property("height", "", "%", 1, 101);
-@include dynamic-property("text", "font-size", 1, 20);
+@include dynamic-property("text", "font-size", 1, 30);
 @include dynamic-property("line-h", "line-height", 1, 20);
 
 
