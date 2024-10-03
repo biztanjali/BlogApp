@@ -6,7 +6,7 @@ import brandImage from "../../public/brands.png";
 
 export default function Home() {
   return (
-    <div className={" flex flex-row flex-align-center padding-2 width-100 height-100"}>
+    <div className={"flex flex-row flex-align-center padding-2 width-100 height-100"}>
       <div className={" width-50 height-100 flex flex-column padding-l-4 flex-justify-center"}>
         <div className={"text-bold text-25 padding-b-8"}>Creative Thoughts Agency.</div>
         <p className={"padding-b-8"}>
