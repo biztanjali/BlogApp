@@ -20,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <div className="width-100 height-100 flex flex-column padding-l-8 padding-r-8">
         <Navbar/>
         <div className={`${inter.className} main-container`}>
         {children}
         </div>
         <Footer/>
+        </div>
       </body>
     </html>
   );
