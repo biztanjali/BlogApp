@@ -1,13 +1,13 @@
 import Links from "./links/Links";
 
+import styles from "./navbar.module.scss"
+
 
 export default function Navbar() {
   return (
-    <div style={{height: "5rem"}}>
-      <div>Logo</div>
-      <div>
+    <div className={`${styles.container} width-100 flex flex-align-center flex-justify-between`}>
+      <div className={`${styles.logo} width-30`}>Logo</div>
       <Links/>
-      </div>
     </div>
   )
 }
