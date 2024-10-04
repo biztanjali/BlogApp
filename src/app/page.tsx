@@ -18,8 +18,8 @@ export default function Home() {
           <CustomButton buttonText="Contact" greyButton noOutline circular/>
         </div>
       </div>
-      <div className={" width-50 position-relative height-100 flex  flex-justify-center"}>
-        <Image src={heroGiff} alt="heroGif"  className={"width-80 height-80"} />
+      <div className={" width-50 position-relative height-100 "}>
+        <Image src={heroGiff} alt="heroGif" fill  className={"width-80 height-80"} />
       </div>
     </div>
   );

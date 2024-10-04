@@ -31,8 +31,8 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="width-40 height-100 flex flex-justify-center flex-align-center">
-      <Image src={aboutImage} alt="About" className="width-80 height-80" />
+      <div className="width-40 height-100 position-relative">
+      <Image src={aboutImage} alt="About" fill className="width-80 height-80" />
       </div>
       </div>
     );

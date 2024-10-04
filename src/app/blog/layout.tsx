@@ -1,9 +1,8 @@
-
-export default function BlogLayout({children}:any) {
+export default function BlogLayout({ children }: any) {
   return (
     <div>
-      <h2>this is blog layout</h2>
-    {children}
+      {/* <h2>this is blog layout</h2> */}
+      {children}
     </div>
-  )
+  );
 }
