@@ -3,7 +3,22 @@ import classNames from "classnames";
 
 import "./HookForms.scss";
 
-export function HookFormInput(props: any) {
+interface IProps {
+  label: string;
+  labelClassName?: string;
+  baseClassName?: string;
+  name: string;
+  validation?: any;
+  control?: any;
+  errors?: any;
+  inputClassName?: string;
+  id?: any;
+  triggerOnChange?: any;
+  caption?: string;
+  captionClassName?: string;
+}
+
+export function HookFormInput(props: IProps) {
   const {
     label,
     caption,
@@ -17,8 +32,6 @@ export function HookFormInput(props: any) {
     inputClassName,
     id,
     triggerOnChange,
-    eventType,
-    selectorString,
   } = props;
   return (
     <div className={classNames(['flex flex-column custom-input', baseClassName])}>
@@ -37,7 +50,7 @@ export function HookFormInput(props: any) {
               onChange={(e) => {
                 onChange(e.target.value);
                 if(typeof triggerOnChange === "function") {
-                  triggerOnChange(e.target.value, eventType, selectorString);
+                  triggerOnChange(e.target.value);
                 }
               }}
             />

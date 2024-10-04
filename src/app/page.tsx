@@ -21,8 +21,8 @@ export default function Home() {
           <Image src={brandImage} alt="brands" className={"width-100"}/>
         </div>
       </div>
-      <div className={" width-50 position-relative height-100 flex  flex-justify-center"}>
-        <Image src={heroGiff} alt="heroGif"  className={"width-80 height-80"} />
+      <div className={" width-50 position-relative height-100 "}>
+        <Image src={heroGiff} alt="heroGif" fill  className={"width-80 height-80"} />
       </div>
     </div>
   );
