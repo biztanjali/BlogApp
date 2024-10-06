@@ -1,10 +1,20 @@
 import PostCard from "@/components/PostCard/PostCard";
+import { getPosts } from "@/lib/data";
+import styles from "./blog.module.scss";
 
-export default function BlogPage() {
-    return (
-      <div className="flex flex-row flex-wrap width-100 height-100">
-       {/* <PostCard imageLink="/contact.png" slug={1}/> */}
-      </div>
-    );
-  }
-  
+
+
+export default async function BlogPage() {
+  const posts = await getPosts(); // Fetch posts directly in the component
+console.log(posts)
+  return (
+<div className="flex flex-row flex-wrap">
+  {posts?.map(({slug , img, _id}:any)=> {
+  console.log("post", slug , img)
+    return <PostCard imageLink={img} slug={slug} key={_id}/>
+  })}
+</div>
+
+  )
+ 
+}

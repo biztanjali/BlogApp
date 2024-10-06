@@ -3,9 +3,9 @@ import aboutImage from "../../../public/about.png";
 
 export default function AboutPage() {
     return (
-      <div className="width-100 height-100 padding-4 flex flex-row flex-align-center ">
+      <div className="width-100 height-100 flex flex-row flex-align-center ">
        
-      <div className="flex flex-column width-60 flex-justify-between height-70 padding-r-2">
+      <div className="flex flex-column width-60 flex-justify-between">
         <div className={"text-default-color text-5 text-bold "}>About Agency</div>
         <div className="text-18 padding-b-4">
           We create digital ideas that are bigger, bolder, braver and better.
@@ -32,7 +32,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="width-40 height-100 position-relative">
-      <Image src={aboutImage} alt="About" fill className="width-80 height-80" />
+      <Image src={aboutImage} alt="About" fill />
       </div>
       </div>
     );
