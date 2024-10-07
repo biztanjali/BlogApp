@@ -1,4 +1,6 @@
 import PostCard from "@/components/PostCard/PostCard";
+import { getPosts } from "@/lib/data";
+import styles from "./blog.module.scss";
 
 
 async function getPostsData() {
