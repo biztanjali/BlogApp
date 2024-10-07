@@ -5,16 +5,18 @@ import React from "react";
 interface IPosts {
   imageLink: string;
   slug: any;
+  title: string;
+  description: string;
 }
 
-function PostCard({ imageLink, slug }: IPosts) {
+function PostCard({ imageLink, slug , title, description }: IPosts) {
   return (
-    <div className="flex flex-column">
-      <div>
-        <Image src={imageLink} alt="Image" />
+    <div className="flex flex-column width-30 border-1 padding-4 margin-3">
+      <div className="position-relative margin-b-2" style={{height: "10rem"}}>
+        <Image src={imageLink} alt="Image" fill  />
       </div>
-      <div>Title</div>
-      <div> Desciption</div>
+      <div className="text-5 padding-b-2">{title}</div>
+      <div>{description}</div>
       <Link className={"text-underline"} href={`/blog/${slug}`}>
         READ MORE
       </Link>
