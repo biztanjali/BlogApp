@@ -16,7 +16,7 @@ export default async function BlogPage() {
   const posts = await getPostsData();
     return (
       <div className="flex flex-row flex-wrap width-100 height-100">
-        {posts.map((post: any)=> <PostCard imageLink="/contact.png" slug={post.id} title={post.title} description={post.body}/>)}
+        {posts.map((post: any)=> <PostCard key={post.id} imageLink="/contact.png" slug={post.id} title={post.title} description={post.body}/>)}
        
       </div>
     );

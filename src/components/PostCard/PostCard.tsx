@@ -11,8 +11,8 @@ interface IPosts {
 
 function PostCard({ imageLink, slug , title, description }: IPosts) {
   return (
-    <div className="flex flex-column width-30 border-1 padding-4 margin-3">
-      <div className="position-relative margin-b-2" style={{height: "10rem"}}>
+    <div className="flex flex-column width-23 border-1 padding-4 margin-3">
+      <div className="position-relative margin-b-2" style={{height: "15rem"}}>
         <Image src={imageLink} alt="Image" fill  />
       </div>
       <div className="text-5 padding-b-2">{title}</div>
