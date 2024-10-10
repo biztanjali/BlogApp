@@ -5,7 +5,6 @@ export const getPosts = async() => {
   try{
     connectToDb();
    const posts = await Post.find()
-   console.log(posts)
    return posts
   }catch(err){
     console.log(err)
@@ -14,8 +13,7 @@ export const getPosts = async() => {
 export const getPost = async(slug:string) => {
   try{
     connectToDb();
-   const post = await Post.find({slug})
-   console.log(post)
+   const post = await Post.findOne({slug})
    return post
   }catch(err){
     console.log(err)

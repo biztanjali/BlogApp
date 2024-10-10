@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
 import "../styles/index.scss";
+import Head from "next/head";
 
 const inter = Inter({subsets: ['latin']})
 

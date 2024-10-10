@@ -2,9 +2,16 @@ import Image from "next/image";
 import CustomButton from "@/components/CustomButton";
 import heroGiff from "../../public/hero.gif"; 
 import brandImage from "../../public/brands.png";
- 
+// import useScreenSize from "./hoc/UseScreenSize";
+import {  getDeviceTypeFromHeaders } from "@/lib/getDeviceType";
+import { NextRequest } from "next/server";
+import { headers } from "next/headers"; 
 
 export default function Home() {
+  const headersList = headers();
+  const device = getDeviceTypeFromHeaders(headersList);
+  console.log("device" , device)
+
   return (
     <div className={"flex flex-row flex-align-center width-100 height-100"}>
       <div className={" width-50 height-100 flex flex-column"}>
@@ -24,3 +31,4 @@ export default function Home() {
     </div>
   );
 }
+
